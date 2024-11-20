@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Vanilla Setup</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="mx-6">
+    <header class="mt-6 flex items-center justify-between mb-12 relative">
+      <div class="Logos flex space-x-3">
+        <img src="resources/Vector.png" alt="" />
+        <p class="text-logo-color font-raleway font-bold">COMPANY NAME</p>
+      </div>
+      <div class="progress-bar hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:flex">
+        <img src="resources/Active indicator.svg" alt="" />
+        <img src="resources/Active line.svg" alt="" />
+        <img src="resources/Active indicator.svg" alt="" />
+        <img src="resources/Active line.svg" alt="" />
+        <img src="resources/Active indicator.svg" alt="" />
+      </div>
+      <img src="resources/exit logo.png" alt="" />
+    </header>
+    
+
+    <section
+      class="main-content justify-center text-center font-roboto font-light space-y-2 mb-32 flex flex-col "
+    >
+      <div class="progress-bar flex justify-center mb-12 md:hidden">
+        <img src="resources/Active indicator.svg" alt="" />
+        <img src="resources/Active line.svg" alt="" />
+        <img src="resources/Active indicator.svg" alt="" />
+        <img src="resources/Active line.svg" alt="" />
+        <img src="resources/Active indicator.svg" alt="" />
+      </div>
+
+      <h1 class="font-poppins text-bold text-4xl font-bold text-logo-color">
+        Registration
+      </h1>
+      <p class="font-roboto font-light text-base px-7 md:px-0 md:w-[456px] mx-auto md:text-left" >
+        Fill in the registration data. It will take a couple of minutes. All you
+        need is a phone number and e-mail
+      </p>
+    </section>
+
+    <section class="validation flex flex-col">
+      <div id="input-seperator" class="md:border-2 md:rounded-lg md:p-8 md:w-[456px] md:mx-auto md:mb-8">
+
+        <form
+        action=""
+        class="flex flex-col justify-center space-y-4 mb-12 md:mb-2"
+        id="validationForm"
+        >
+        <p class="font-poppins text-sm">Enter your email</p>
+        <input
+        type="email"
+        id="emailInput"
+        placeholder="Enter your email address"
+        class="email-input border-b-2 py-2 font-robot"
+        required
+        />
+        <span id="emailFeedback" class="text-sm text-red-500"></span>
+        
+        <p class="font-poppins text-sm">Set a password</p>
+        <input
+        type="password"
+        id="passwordInput"
+        placeholder="Enter a password"
+        class="password-input border-b-2 py-2"
+        required
+        />
+        <span id="passwordFeedback" class="text-sm text-red-500"></span>
+      </form>
+    </div>
+    <div class="md:w-[456px] md:mx-auto">
+
+      <div class="flex justify-center md:justify-start  ">
+        <button
+        type="button"
+        class="register-button bg-blue-500 text-white py-5 rounded-lg w-52 font-poppins font-medium text-base"
+        id="registerButton"
+        >
+        Register now
+      </button>
+    </div>
+  </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
